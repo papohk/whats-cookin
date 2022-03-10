@@ -13,6 +13,7 @@
     
     <link rel="stylesheet" href="./styles/style.css" />
     <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/recipies.js" defer></script>
 </head>
 <body class="background">
     
@@ -37,100 +38,26 @@
             <li><a href="aboutus.html">About Us</a></li>
         </ul>
         
-        <div class="content col orange lighten-4 card s12 row">
-            <div class="col s12 m6">
-                <div class="card medium orange lighten-3">
-                    <div class="card-image">
-                        <img src="images/istockphoto-1151194847-612x612.jpg">
-                        <span class="card-title">About Us</span>
-                    </div>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                        <a class="blue-text" href="aboutus.html">Find out more!</a>
-                    </div>
-                </div>
+        <div class="content col s12 orange lighten-4 card row">
+            <div class="input-field col s12">
+                <input placeholder="Enter Ingredients" id="query" type="text" class="validate">
+                <label for="search">Ingredients:</label>
+
             </div>
-            
-            <div class="col s12 m6">
-                <div class="card medium orange lighten-3">
-                    <div class="card-image">
-                        <img src="images/istockphoto-1309116531-612x612.jpg">
-                        <span class="card-title">Products</span>
-                    </div>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                        <a class="blue-text" href="#">Find out more!</a>
-                    </div>
-                </div>
+            <button class="btn col s3" onclick="clickSearch()">Search</button>
+            <div class="switch col s6">
+                <label>
+                    Match Any
+                    <input id="anyOrAll" type="checkbox">
+                    <span class="lever"></span>
+                    Match All
+                </label>
             </div>
-            
-            <div class="col s12 m6">
-                <div class="card medium orange lighten-3">
-                    <div class="card-image">
-                        <img src="images/istockphoto-1256728079-612x612.jpg">
-                        <span class="card-title">Events</span>
-                    </div>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                        <a class="blue-text" href="#">Find out more!</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col s12 m6">
-                <div class="card medium orange lighten-3">
-                    <div class="card-image">
-                        <img src="images/istockphoto-1299229208-612x612.jpg">
-                        <span class="card-title">Partners</span>
-                    </div>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                        <a class="blue-text" href="#">Find out more!</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col s12 m6">
-                <div class="card medium orange lighten-3">
-                    <div class="card-image">
-                        <img src="images/istockphoto-1299229202-612x612.jpg">
-                        <span class="card-title">Special</span>
-                    </div>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                        <a class="blue-text" href="#">Find out more!</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col s12 m6">
-                <div class="card medium orange lighten-3">
-                    <div class="card-image">
-                        <img src="images/istockphoto-1299228848-612x612.jpg">
-                        <span class="card-title">Gift Cards</span>
-                    </div>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                        <a class="blue-text" href="#">Find out more!</a>
-                    </div>
-                </div>
-            </div>
-            
-            
         </div>
-        
+
+        <div id="list" class="content col orange lighten-4 card s12 row">
+            
+        </div>        
         
         <div class="footer col orange lighten-4 card s12 row">
             <div class="col s4">
