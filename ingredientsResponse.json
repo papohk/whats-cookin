@@ -1,0 +1,212 @@
+[
+    {
+        "name": "sugar",
+        "image": "sugar-in-bowl.png",
+        "amount": {
+            "metric": {
+                "value": 400,
+                "unit": "g"
+            },
+            "us": {
+                "value": 2,
+                "unit": "c"
+            }
+        }
+    },
+    {
+        "name": "vegetable oil",
+        "image": null,
+        "amount": {
+            "metric": {
+                "value": 218,
+                "unit": "ml"
+            },
+            "us": {
+                "value": 1,
+                "unit": "c"
+            }
+        }
+    },
+    {
+        "name": "eggs",
+        "image": "egg.png",
+        "amount": {
+            "metric": {
+                "value": 3,
+                "unit": ""
+            },
+            "us": {
+                "value": 3,
+                "unit": ""
+            }
+        }
+    },
+    {
+        "name": "flour",
+        "image": "flour.png",
+        "amount": {
+            "metric": {
+                "value": 375,
+                "unit": "g"
+            },
+            "us": {
+                "value": 3,
+                "unit": "c"
+            }
+        }
+    },
+    {
+        "name": "diet soda",
+        "image": "soda-can.jpg",
+        "amount": {
+            "metric": {
+                "value": 1,
+                "unit": "tsp"
+            },
+            "us": {
+                "value": 1,
+                "unit": "tsp"
+            }
+        }
+    },
+    {
+        "name": "salt",
+        "image": "salt.jpg",
+        "amount": {
+            "metric": {
+                "value": 1,
+                "unit": "tsp"
+            },
+            "us": {
+                "value": 1,
+                "unit": "tsp"
+            }
+        }
+    },
+    {
+        "name": "cinnamon",
+        "image": "cinnamon.jpg",
+        "amount": {
+            "metric": {
+                "value": 1,
+                "unit": "tsp"
+            },
+            "us": {
+                "value": 1,
+                "unit": "tsp"
+            }
+        }
+    },
+    {
+        "name": "vanilla",
+        "image": "vanilla-extract.jpg",
+        "amount": {
+            "metric": {
+                "value": 2,
+                "unit": "tsps"
+            },
+            "us": {
+                "value": 2,
+                "unit": "tsps"
+            }
+        }
+    },
+    {
+        "name": "apples",
+        "image": "apple.jpg",
+        "amount": {
+            "metric": {
+                "value": 375,
+                "unit": "g"
+            },
+            "us": {
+                "value": 3,
+                "unit": "c"
+            }
+        }
+    },
+    {
+        "name": "coconut",
+        "image": "coconut.jpg",
+        "amount": {
+            "metric": {
+                "value": 160,
+                "unit": "ml"
+            },
+            "us": {
+                "value": 2,
+                "unit": "c"
+            }
+        }
+    },
+    {
+        "name": "dates",
+        "image": "dates.jpg",
+        "amount": {
+            "metric": {
+                "value": 147,
+                "unit": "g"
+            },
+            "us": {
+                "value": 1,
+                "unit": "c"
+            }
+        }
+    },
+    {
+        "name": "pecans",
+        "image": "pecans.jpg",
+        "amount": {
+            "metric": {
+                "value": 99,
+                "unit": "g"
+            },
+            "us": {
+                "value": 1,
+                "unit": "c"
+            }
+        }
+    },
+    {
+        "name": "brown sugar",
+        "image": "light-brown-sugar.jpg",
+        "amount": {
+            "metric": {
+                "value": 220,
+                "unit": "g"
+            },
+            "us": {
+                "value": 1,
+                "unit": "c"
+            }
+        }
+    },
+    {
+        "name": "butter",
+        "image": "butter-sliced.jpg",
+        "amount": {
+            "metric": {
+                "value": 113.5,
+                "unit": "g"
+            },
+            "us": {
+                "value": 0.5,
+                "unit": "c"
+            }
+        }
+    },
+    {
+        "name": "milk",
+        "image": "milk.png",
+        "amount": {
+            "metric": {
+                "value": 122,
+                "unit": "ml"
+            },
+            "us": {
+                "value": 0.5,
+                "unit": "c"
+            }
+        }
+    }
+]
