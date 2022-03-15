@@ -1,45 +1,19 @@
-const recipes = [
-    {
-        name: "Simple Bean Burritos",
-        image: "./images/istockphoto-576586906-612x612.jpg",
-        ingredients: [
-            "pinto beans", 
-            "long-grain rice", 
-            "flour tortillas", 
-            "shredded cheese"
-        ],
-        
-    },
-    {
-        name: "Spicy Pork HotPot",
-        image: "./images/istockphoto-576586906-612x612.jpg",
-        ingredients:[
-            "pork",
-            "bok choy",
-            "onions",
-            "rice cakes",
-        ]
-    },
-    {
-        name: "Pork Burritos",
-        image: "./images/istockphoto-576586906-612x612.jpg",
-        ingredients:[
-            "pork",
-            "beans",
-            "rice",
-        ]
-    },
-]
 const emptyRecipe = {
-    name: "",
+    title: "",
     image: "images/istockphoto-1309116531-612x612.jpg",
-    ingredients: "please enter a search term to see matching recipies"
+    description: "please enter a search term to see matching recipies"
 }
 const noMatchesRecipe = {
-    name: "",
+    title: "",
     image: "images/istockphoto-1309116531-612x612.jpg",
-    ingredients: "no matching recipes :("
+    description: "no matching recipes :("
 }
+
+const urlBase = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com";
+const API_KEY = {
+    "x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
+    "x-rapidapi-key": "c875253e6amsh90b2116ea90598fp17a369jsn02e65b827c0d"
+};
 
 /* Ternary operator compresses if statement into one line
 let value;
@@ -50,67 +24,43 @@ if (condition) {
 }
 let value = (condition) ? (value if true) : (value if false)
 //*/
+function onkey(e) {
+    // check that the key that was hit was Enter
+    if (e.key=="Enter") {
+        // If it was Enter, act as if the search button was clicked
+        clickSearch();
+    }
+}
 
-function clickSearch() {
+function init() {
+    // bind a function to happen when 
+    // the user presses a key in the search box
+    document.getElementById("query").addEventListener("keypress", onkey)
+    clickSearch(); // shows empty search message
+}
+init();
+
+// runs this code when the user clicks the search button
+async function clickSearch() {
     let query = document.getElementById("query").value;
-    console.log(query)
+    // console.log(query)
     let anyOrAll = document.getElementById("anyOrAll").checked ? "all" : "any";
-    let results = search(query, anyOrAll);
+    //let results = search(query, anyOrAll);
     clearList();
+    if (query.trim() == "") { // show hint when empty
+        render(emptyRecipe);
+        return;
+    }
+
+    let results = await searchAPI(query); 
+    if (results.length == 0) {// show hint when nothing matches
+        render(noMatchesRecipe);
+        return;
+    }
+
     for (let i = 0; i < results.length; i++) {
         render(results[i]);
     }
-}
-clickSearch(); // shows empty search message
-
-function search(query, anyOrAll = "any") {
-    // "Pork, Onions"
-    query = query.toLowerCase();
-    if (query.trim().length == 0) { 
-        return [emptyRecipe];
-    }
-    // "pork, onions"
-    let splits = query.split(',')
-        .map(it => it.trim());
-    // [ "pork", " onions" ] before trim
-    // [ "pork", "onions" ] after trim
-    let matched = []
-
-    // Loop over each recipe
-    for (let i = 0; i < recipes.length; i++) {
-        let recipe = recipes[i];
-        
-        let match = 0;
-        // Loop over each ingredient in the recipie
-        for (let k = 0; k < recipe.ingredients.length; k++) {
-            // Loop over all search criteria
-            for (let j = 0; j < splits.length; j++) {
-                // if we find search terms in the ingredient
-                if (recipe.ingredients[k].includes(splits[j])) {
-                    // flag the recipe as a match
-                    match++;
-                    break;
-                }
-
-            }
-        }
-        if (anyOrAll == "all") {
-            if (match == splits.length) {
-                matched.push(recipe);
-            }
-        } else {
-            // if the recipe was flagged as a match, add it
-            if (match >= 1) {
-                matched.push(recipe);
-            }
-        }
-
-    }
-    if (matched.length == 0) {
-        return [noMatchesRecipe]
-    }
-
-    return matched;
 }
 
 
@@ -122,13 +72,13 @@ function clearList() {
 function render(recipe) {
     let div = document.createElement('div')
     div.innerHTML = `<div class="col s12 m6">
-    <div class="card medium orange lighten-3">
+    <div class="card small orange lighten-3">
         <div class="card-image">
             <img src="${recipe.image}">
-            <span class="card-title">${recipe.name}</span>
+            <span class="card-title">${recipe.title}</span>
         </div>
         <div class="card-content">
-            ${recipe.ingredients}
+            ${recipe.description||""}
         </div>
         <div class="card-action">
             <a class="blue-text" href="#">Find out more!</a>
@@ -140,4 +90,34 @@ function render(recipe) {
     
 }
 
-console.log(search("pork, Onion"), "all")
+async function searchAPI(ingredients) {
+    // build URL for API endpoint we want to hit
+    let url = urlBase + "/recipes/findByIngredients";
+    // add parameters to URL
+    url += "?ingredients=" + ingredients;
+    url += "&number=9";
+
+    // Make the request to the API endpoint, and wait for result
+    let result = await fetch(url, {
+        method: "GET",
+        headers: API_KEY
+    })
+    // Parse result from response in JSON format
+    let json = await result.json();
+    // return array of results back to caller
+    return json;
+}
+//searchAPI("tofu, cheese")
+
+
+// Copied code from https://rapidapi.com/spoonacular/api/recipe-food-nutrition
+async function callAPI() {
+    var result = await fetch(urlBase+"/recipes/643426/information", {
+        "method": "GET",
+        "headers": API_KEY,
+    })
+    var json = await result.json();
+    console.log(json);
+}
+
+//callAPI();
