@@ -32,13 +32,7 @@ function onkey(e) {
     }
 }
 
-function init() {
-    // bind a function to happen when 
-    // the user presses a key in the search box
-    document.getElementById("query").addEventListener("keypress", onkey)
-    clickSearch(); // shows empty search message
-}
-init();
+
 
 // runs this code when the user clicks the search button
 async function clickSearch() {
@@ -81,7 +75,7 @@ function render(recipe) {
             ${recipe.description||""}
         </div>
         <div class="card-action">
-            <a class="blue-text" href="#">Find out more!</a>
+            <a class="blue-text" href="recipe.html?id=${recipe.id}">Find out more!</a>
         </div>
     </div>
 </div>`
