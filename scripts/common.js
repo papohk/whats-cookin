@@ -105,8 +105,8 @@ async function searchAPI(ingredients) {
 
 
 // Copied code from https://rapidapi.com/spoonacular/api/recipe-food-nutrition
-async function callAPI() {
-    var result = await fetch(urlBase+"/recipes/643426/information", {
+async function callAPI(id) {
+    var result = await fetch(urlBase+"/recipes/"+id+"/information", {
         "method": "GET",
         "headers": API_KEY,
     })
