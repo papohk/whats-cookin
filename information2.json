@@ -1,0 +1,303 @@
+{
+    "vegetarian": true,
+    "vegan": true,
+    "glutenFree": true,
+    "dairyFree": true,
+    "veryHealthy": false,
+    "cheap": false,
+    "veryPopular": false,
+    "sustainable": false,
+    "weightWatcherSmartPoints": 8,
+    "gaps": "no",
+    "lowFodmap": false,
+    "aggregateLikes": 35,
+    "spoonacularScore": 39,
+    "healthScore": 4,
+    "creditsText": "Serious Eats",
+    "sourceName": "Serious Eats",
+    "pricePerServing": 102.72,
+    "extendedIngredients": [
+        {
+            "id": 9085,
+            "aisle": "Produce",
+            "image": "currants.jpg",
+            "consistency": "solid",
+            "name": "currants",
+            "nameClean": "dried currants",
+            "original": "½ cup currants or raisins",
+            "originalName": "currants or raisins",
+            "amount": 0.5,
+            "unit": "cup",
+            "meta": [],
+            "measures": {
+                "us": {
+                    "amount": 0.5,
+                    "unitShort": "cups",
+                    "unitLong": "cups"
+                },
+                "metric": {
+                    "amount": 118.294,
+                    "unitShort": "ml",
+                    "unitLong": "milliliters"
+                }
+            }
+        },
+        {
+            "id": 10020054,
+            "aisle": "Pasta and Rice",
+            "image": "rice-jasmine-cooked.jpg",
+            "consistency": "solid",
+            "name": "glutinous rice",
+            "nameClean": "glutinous rice",
+            "original": "2 cups glutinous rice",
+            "originalName": "glutinous rice",
+            "amount": 2,
+            "unit": "cups",
+            "meta": [],
+            "measures": {
+                "us": {
+                    "amount": 2,
+                    "unitShort": "cups",
+                    "unitLong": "cups"
+                },
+                "metric": {
+                    "amount": 473.176,
+                    "unitShort": "ml",
+                    "unitLong": "milliliters"
+                }
+            }
+        },
+        {
+            "id": 99082,
+            "aisle": "Ethnic Foods",
+            "image": "red-bean-paste.png",
+            "consistency": "solid",
+            "name": "red bean paste",
+            "nameClean": "red bean paste",
+            "original": "1 cup red bean paste",
+            "originalName": "red bean paste",
+            "amount": 1,
+            "unit": "cup",
+            "meta": [
+                "red"
+            ],
+            "measures": {
+                "us": {
+                    "amount": 1,
+                    "unitShort": "cup",
+                    "unitLong": "cup"
+                },
+                "metric": {
+                    "amount": 236.588,
+                    "unitShort": "ml",
+                    "unitLong": "milliliters"
+                }
+            }
+        },
+        {
+            "id": null,
+            "aisle": "?",
+            "image": null,
+            "consistency": null,
+            "name": "lard",
+            "nameClean": null,
+            "original": "2 tablespoons lard",
+            "originalName": "lard",
+            "amount": 2,
+            "unit": "tablespoons",
+            "meta": [],
+            "measures": {
+                "us": {
+                    "amount": 2,
+                    "unitShort": "Tbsps",
+                    "unitLong": "Tbsps"
+                },
+                "metric": {
+                    "amount": 2,
+                    "unitShort": "Tbsps",
+                    "unitLong": "Tbsps"
+                }
+            }
+        }
+    ],
+    "id": 201056,
+    "title": "Glutinous Rice with Red Bean Paste, Walnuts, and Currants",
+    "readyInMinutes": 60,
+    "servings": 8,
+    "sourceUrl": "http://www.seriouseats.com/recipes/2012/05/glutinous-rice-with-red-bean-paste-walnuts-an.html",
+    "image": "https://spoonacular.com/recipeImages/201056-556x370.jpg",
+    "imageType": "jpg",
+    "summary": "Glutinous Rice with Red Bean Paste, Walnuts, and Currants might be just the side dish you are searching for. Watching your figure? This gluten free and vegan recipe has <b>277 calories</b>, <b>5g of protein</b>, and <b>0g of fat</b> per serving. This recipe serves 8. For <b>$1.03 per serving</b>, this recipe <b>covers 4%</b> of your daily requirements of vitamins and minerals. A couple people made this recipe, and 35 would say it hit the spot. If you have currants, glutinous rice, bean paste, and a few other ingredients on hand, you can make it. From preparation to the plate, this recipe takes about <b>1 hour</b>. All things considered, we decided this recipe <b>deserves a spoonacular score of 41%</b>. This score is pretty good. Similar recipes include <a href=\"https://spoonacular.com/recipes/rice-cakes-with-chili-paste-fermented-black-bean-and-sichuan-peppercorn-203610\">Rice Cakes with Chili Paste, Fermented Black Bean, and Sichuan Peppercorn</a>, <a href=\"https://spoonacular.com/recipes/brussels-sprouts-with-walnuts-and-currants-10583\">Brussels Sprouts With Walnuts And Currants</a>, and <a href=\"https://spoonacular.com/recipes/apple-spice-cake-with-walnuts-and-currants-56214\">Apple Spice Cake with Walnuts and Currants</a>.",
+    "cuisines": [],
+    "dishTypes": [
+        "side dish"
+    ],
+    "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+    ],
+    "occasions": [],
+    "winePairing": {},
+    "instructions": "Procedures                                                                              1                                                                            The night before, soak the rice in a large bowl of water at room temperature. The rice should soak for at least 6 hours and can be left up in the water for up to 24 hours.                                                                                                                            2                                                                            The next day, drain and rinse the rinse. Melt lard in a large skillet over low heat. Add rice and stir to coat. Stir in chopped nuts and dried fruit.                                                                                                                            3                                                                            Divide half of rice evenly between eight 8-ounce ramekins. Divde red bean paste evenly between ramekins, scooping a small mound into center of rice, then top with remaining rice.                                                                                                                            4                                                                            Place all the bowls in a steamer. Steam over high heat for 25 to 35 minutes, until the rice is just tender and cooked through.                                                                                                                            5                                                                            Serve immediately, drizzling with honey.  Leftovers may be covered with plastic wrap and refrigerated for up to 3 days. Re-steam to warm through.",
+    "analyzedInstructions": [
+        {
+            "name": "",
+            "steps": [
+                {
+                    "number": 1,
+                    "step": "The night before, soak the rice in a large bowl of water at room temperature. The rice should soak for at least 6 hours and can be left up in the water for up to 24 hours.",
+                    "ingredients": [
+                        {
+                            "id": 14412,
+                            "name": "water",
+                            "localizedName": "water",
+                            "image": "water.png"
+                        },
+                        {
+                            "id": 20444,
+                            "name": "rice",
+                            "localizedName": "rice",
+                            "image": "uncooked-white-rice.png"
+                        }
+                    ],
+                    "equipment": [
+                        {
+                            "id": 404783,
+                            "name": "bowl",
+                            "localizedName": "bowl",
+                            "image": "bowl.jpg"
+                        }
+                    ],
+                    "length": {
+                        "number": 1800,
+                        "unit": "minutes"
+                    }
+                },
+                {
+                    "number": 2,
+                    "step": "The next day, drain and rinse the rinse. Melt lard in a large skillet over low heat.",
+                    "ingredients": [
+                        {
+                            "id": 0,
+                            "name": "lard",
+                            "localizedName": "lard",
+                            "image": "shortening.jpg"
+                        }
+                    ],
+                    "equipment": [
+                        {
+                            "id": 404645,
+                            "name": "frying pan",
+                            "localizedName": "frying pan",
+                            "image": "pan.png"
+                        }
+                    ]
+                },
+                {
+                    "number": 3,
+                    "step": "Add rice and stir to coat. Stir in chopped nuts and dried fruit.",
+                    "ingredients": [
+                        {
+                            "id": 1009094,
+                            "name": "dried fruit",
+                            "localizedName": "dried fruit",
+                            "image": "dried-fruit-mixed.jpg"
+                        },
+                        {
+                            "id": 12135,
+                            "name": "nuts",
+                            "localizedName": "nuts",
+                            "image": "nuts-mixed.jpg"
+                        },
+                        {
+                            "id": 20444,
+                            "name": "rice",
+                            "localizedName": "rice",
+                            "image": "uncooked-white-rice.png"
+                        }
+                    ],
+                    "equipment": []
+                },
+                {
+                    "number": 4,
+                    "step": "Divide half of rice evenly between eight 8-ounce ramekins. Divde red bean paste evenly between ramekins, scooping a small mound into center of rice, then top with remaining rice.",
+                    "ingredients": [
+                        {
+                            "id": 99082,
+                            "name": "red bean paste",
+                            "localizedName": "red bean paste",
+                            "image": "red-bean-paste.png"
+                        },
+                        {
+                            "id": 20444,
+                            "name": "rice",
+                            "localizedName": "rice",
+                            "image": "uncooked-white-rice.png"
+                        }
+                    ],
+                    "equipment": [
+                        {
+                            "id": 404781,
+                            "name": "ramekin",
+                            "localizedName": "ramekin",
+                            "image": "ramekin.jpg"
+                        }
+                    ]
+                },
+                {
+                    "number": 5,
+                    "step": "Place all the bowls in a steamer. Steam over high heat for 25 to 35 minutes, until the rice is just tender and cooked through.",
+                    "ingredients": [
+                        {
+                            "id": 20444,
+                            "name": "rice",
+                            "localizedName": "rice",
+                            "image": "uncooked-white-rice.png"
+                        }
+                    ],
+                    "equipment": [
+                        {
+                            "id": 404783,
+                            "name": "bowl",
+                            "localizedName": "bowl",
+                            "image": "bowl.jpg"
+                        }
+                    ],
+                    "length": {
+                        "number": 25,
+                        "unit": "minutes"
+                    }
+                },
+                {
+                    "number": 6,
+                    "step": "Serve immediately, drizzling with honey.  Leftovers may be covered with plastic wrap and refrigerated for up to 3 days. Re-steam to warm through.",
+                    "ingredients": [
+                        {
+                            "id": 19296,
+                            "name": "honey",
+                            "localizedName": "honey",
+                            "image": "honey.png"
+                        },
+                        {
+                            "id": 10018364,
+                            "name": "wrap",
+                            "localizedName": "wrap",
+                            "image": "flour-tortilla.jpg"
+                        }
+                    ],
+                    "equipment": [
+                        {
+                            "id": 404730,
+                            "name": "plastic wrap",
+                            "localizedName": "plastic wrap",
+                            "image": "plastic-wrap.jpg"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "originalId": null
+}
