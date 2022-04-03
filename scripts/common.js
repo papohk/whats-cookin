@@ -38,7 +38,6 @@ function onkey(e) {
 async function clickSearch() {
     let query = document.getElementById("query").value;
     // console.log(query)
-    let anyOrAll = document.getElementById("anyOrAll").checked ? "all" : "any";
     //let results = search(query, anyOrAll);
     clearList();
     if (query.trim() == "") { // show hint when empty
@@ -53,7 +52,7 @@ async function clickSearch() {
     }
 
     for (let i = 0; i < results.length; i++) {
-        render(results[i]);
+        render(results[i], query);
     }
 }
 
@@ -63,7 +62,7 @@ function clearList() {
     list.innerHTML = "";
 }
 
-function render(recipe) {
+function render(recipe, query) {
     let div = document.createElement('div')
     div.innerHTML = `<div class="col s12 m6">
     <div class="card small orange lighten-3">
@@ -75,7 +74,7 @@ function render(recipe) {
             ${recipe.description||""}
         </div>
         <div class="card-action">
-            <a class="blue-text" href="recipe.html?id=${recipe.id}">Find out more!</a>
+            <a class="blue-text" href="recipe.html?id=${recipe.id}&query=${query}">Find out more!</a>
         </div>
     </div>
 </div>`
@@ -87,6 +86,7 @@ function render(recipe) {
 async function searchAPI(ingredients) {
     // build URL for API endpoint we want to hit
     let url = urlBase + "/recipes/findByIngredients";
+
     // add parameters to URL
     url += "?ingredients=" + ingredients;
     url += "&number=9";
@@ -96,8 +96,10 @@ async function searchAPI(ingredients) {
         method: "GET",
         headers: API_KEY
     })
+    
     // Parse result from response in JSON format
     let json = await result.json();
+    console.log(json);
     // return array of results back to caller
     return json;
 }
@@ -105,13 +107,14 @@ async function searchAPI(ingredients) {
 
 
 // Copied code from https://rapidapi.com/spoonacular/api/recipe-food-nutrition
-async function callAPI(id) {
+async function infoAPI(id) {
     var result = await fetch(urlBase+"/recipes/"+id+"/information", {
         "method": "GET",
         "headers": API_KEY,
     })
     var json = await result.json();
     console.log(json);
+    return json;
 }
 
 //callAPI();
