@@ -37,7 +37,7 @@ function onkey(e) {
 // runs this code when the user clicks the search button
 async function clickSearch() {
     let query = document.getElementById("query").value;
-    // console.log(query)
+    console.log("The user type in",query);
     //let results = search(query, anyOrAll);
     clearList();
     if (query.trim() == "") { // show hint when empty
