@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script src="/scripts/script.js" defer></script>
+    <script src="/scripts/common.js" defer></script>
+    <script src="/scripts/index.js" defer></script>
+</head>
+<body class="background">
+    
+    <div class="container row">
+        
+        <nav>
+            <div class="nav-wrapper orange lighten-4 ">
+                <a href="#!" class="brand-logo black-text">What's Cooking?</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="black-text material-icons">menu</i></a>
+                <ul class="right black-text hide-on-med-and-down">
+                    <li><a class="black-text" href="index.html">Home</a></li>
+                    <li><a class="black-text" href="aboutus.html">About Us</a></li>
+                    <li><a class="black-text" href="products.html">Products</a></li>
+                    <li><a class="black-text" href="events.html">Events</a></li>
+                    <li><a class="black-text" href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <ul class="sidenav orange lighten-4" id="mobile-demo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+        
+        <div class="content col s12 orange lighten-4 card row">
+            <div class="input-field col s12">
+                <input placeholder="Enter Ingredients" id="query" type="text" class="validate">
+                <label for="search">Ingredients:</label>
+
+            </div>
+            <button class="btn col s3" onclick="clickSearch()">Search</button>
+            
+        </div>
+
+        <div id="list" class="content col orange lighten-4 card s12 row">
+            
+        </div>        
+        
+        <div class="footer col orange lighten-4 card s12 row">
+            
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>

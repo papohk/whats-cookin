@@ -1,0 +1,3 @@
+/node_modules
+package-lock.json
+# //we don't these to add to the repo, becuz these automatically created when u run npm install
