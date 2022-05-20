@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+}
+
+.header {
+  background-color: black;
+  background-image: linear-gradient(yellow, #ff5722);
+  height: 100vh;
+  overflow-y: auto;
+  width: 10rem;
+}
+
+.header::-webkit-scrollbar {
+  display: none;
+}
+
+.nav a {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.nav a .fa {
+  font-size: 2.5rem;
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidenav a {
+  padding-bottom: 1rem;
+}
+
+.sidenav a .fa {
+  padding-bottom: 0.5rem;
+}
+
+.sidenav a:hover {
+  color: var(--blue);
+}
+
+.logo {
+  padding: 1.5rem 0;
+}
+
+.logo img {
+  max-height: 3.5rem;
+}
+
+.topnav {
+  display: none;
+  background: #ff5722;
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+}
+
+.topnav a {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .topnav {
+    display: flex;
+  }
+  .header {
+    display: none;
+  }
+}
+
+.main {
+  flex-grow: 1;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.title {
+  text-align: center;
+}
+
+.content {
+  height: 100vh;
+}
+
+.footer {
+/*   text-align: center; */
+}

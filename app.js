@@ -1,23 +1,29 @@
-//http://expressjs.com/en/starter/hello-world.html
+require("dotenv").config()
 const express = require('express')
-const app = express()
-const port = 8000
+const mongoose = require('mongoose')
+// const morgan = require('morgan');
+const path = require('path');
+const methodOverride = require('method-override');
+const routes = require('./routes/index-routes');
+const app = express();
+
+const {
+  PORT = 8000,
+  MONGODB_URI = 'mongodb://localhost:27017/cookin'
+} = process.env
+
+app.set('view engine', 'ejs'); // <-- this is middleware, place this b4 any routes
 
 //serves static files
 app.use(express.static('public'))
-app.set('view engine', 'ejs'); // <-- this is middleware, place this b4 any routes
 
-app.get('/', (req, res) => {
-    res.render('pages/index', {})
-})
-app.get('/', (req, res) => {
-    res.render('pages/index', {})
-})  
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+app.use('/', routes);
+
+mongoose.connect(MONGODB_URI, () => {
+  app.listen(PORT, () => {
+    console.log(`Example app listening on port ${PORT}`)
+  })
 })
 
 
-// Next step for 4/28/22 - steup the rest of the js file, but we will change "About Us" to "Favorite List"
-//added a route for Favorite List
-//
+

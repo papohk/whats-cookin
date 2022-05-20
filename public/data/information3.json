@@ -1,0 +1,132 @@
+{
+    "vegetarian": true,
+    "vegan": true,
+    "glutenFree": true,
+    "dairyFree": true,
+    "veryHealthy": false,
+    "cheap": false,
+    "veryPopular": false,
+    "sustainable": false,
+    "weightWatcherSmartPoints": 6,
+    "gaps": "no",
+    "lowFodmap": false,
+    "aggregateLikes": 114,
+    "spoonacularScore": 89,
+    "healthScore": 21,
+    "creditsText": "Jen West",
+    "sourceName": "Pink When",
+    "pricePerServing": 151.5,
+    "extendedIngredients": [
+        {
+            "id": 19912,
+            "aisle": "Ethnic Foods;Health Foods",
+            "image": "agave.png",
+            "consistency": "liquid",
+            "name": "agave nectar",
+            "nameClean": "agave",
+            "original": "1 Tbsp Agave Nectar (light)",
+            "originalName": "Agave Nectar (light)",
+            "amount": 1,
+            "unit": "Tbsp",
+            "meta": [
+                "light",
+                "()"
+            ],
+            "measures": {
+                "us": {
+                    "amount": 1,
+                    "unitShort": "Tbsp",
+                    "unitLong": "Tbsp"
+                },
+                "metric": {
+                    "amount": 1,
+                    "unitShort": "Tbsp",
+                    "unitLong": "Tbsp"
+                }
+            }
+        },
+        {
+            "id": 9016,
+            "aisle": "Beverages",
+            "image": "apple-juice.jpg",
+            "consistency": "liquid",
+            "name": "apple juice",
+            "nameClean": "apple juice",
+            "original": "1/2 cup of fresh 100% Apple Juice",
+            "originalName": "fresh 100% Apple Juice",
+            "amount": 0.5,
+            "unit": "cup",
+            "meta": [
+                "fresh",
+                "100%"
+            ],
+            "measures": {
+                "us": {
+                    "amount": 0.5,
+                    "unitShort": "cups",
+                    "unitLong": "cups"
+                },
+                "metric": {
+                    "amount": 118.294,
+                    "unitShort": "ml",
+                    "unitLong": "milliliters"
+                }
+            }
+        },
+        {
+            "id": 9148,
+            "aisle": "Produce",
+            "image": "kiwi.png",
+            "consistency": "solid",
+            "name": "kiwi",
+            "nameClean": "kiwi",
+            "original": "2 Kiwi (also known as Chinese Gooseberries)",
+            "originalName": "Kiwi (also known as Chinese Gooseberries)",
+            "amount": 2,
+            "unit": "",
+            "meta": [
+                "chinese",
+                "(also known as Gooseberries)"
+            ],
+            "measures": {
+                "us": {
+                    "amount": 2,
+                    "unitShort": "",
+                    "unitLong": ""
+                },
+                "metric": {
+                    "amount": 2,
+                    "unitShort": "",
+                    "unitLong": ""
+                }
+            }
+        }
+    ],
+    "id": 715412,
+    "title": "Kiwi Popsicles – Summer Popsicle Series",
+    "readyInMinutes": 45,
+    "servings": 1,
+    "sourceUrl": "http://www.pinkwhen.com/kiwi-popsicles-summer-popsicle-series/",
+    "image": "https://spoonacular.com/recipeImages/715412-556x370.jpg",
+    "imageType": "jpg",
+    "summary": "Kiwi Popsicles – Summer Popsicle Series is a <b>gluten free and vegan</b> side dish. For <b>$1.52 per serving</b>, this recipe <b>covers 13%</b> of your daily requirements of vitamins and minerals. One serving contains <b>233 calories</b>, <b>2g of protein</b>, and <b>1g of fat</b>. 114 people have tried and liked this recipe. From preparation to the plate, this recipe takes approximately <b>45 minutes</b>. It can be enjoyed any time, but it is especially good for <b>The Fourth Of July</b>. If you have agave nectar, apple juice, kiwi, and a few other ingredients on hand, you can make it. All things considered, we decided this recipe <b>deserves a spoonacular score of 90%</b>. This score is excellent. Try <a href=\"https://spoonacular.com/recipes/summer-popsicle-series-strawberry-715422\">Summer Popsicle Series – Strawberry</a>, <a href=\"https://spoonacular.com/recipes/pea-wee-kiwi-popsicles-543708\">Pea Wee Kiwi Popsicles</a>, and <a href=\"https://spoonacular.com/recipes/kiwi-popsicles-472995\">Kiwi Popsicles</a> for similar recipes.",
+    "cuisines": [],
+    "dishTypes": [
+        "side dish"
+    ],
+    "diets": [
+        "gluten free",
+        "dairy free",
+        "lacto ovo vegetarian",
+        "vegan"
+    ],
+    "occasions": [
+        "4th of july",
+        "summer"
+    ],
+    "winePairing": {},
+    "instructions": null,
+    "analyzedInstructions": [],
+    "originalId": null,
+    "spoonacularSourceUrl": "https://spoonacular.com/kiwi-popsicles-summer-popsicle-series-715412"
+}
