@@ -5,17 +5,17 @@
             <h1 class="title">Hey there, welcome back !</h1>
             <div class="card-container">
                 <div class="center-card">
-                    <form>
+                    <form action="/user/login" method="post">
                         <div>
-                            <label for="username">Username:</label>
-                            <input placeholder="mango123" id="username" type="text" class="login" />
+                            <label for="email">Email:</label>
+                            <input placeholder="mango123" id="email" type="text" class="login" name="email" />
                         </div>
                         <div>
                             <label for="password">Password:</label>
-                            <input placeholder="#####" id="password" type="password" class="login" />
+                            <input placeholder="#####" id="password" type="password" class="login" name="password"/>
                         </div>
+                        <button class="submit-button" type="submit">Login</button>
                     </form>
-                    <button class="submit-button">Login</button>
                     <a class="submit-button" href="signup">Sign Up</a>
                 </div>
 

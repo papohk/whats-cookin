@@ -5,17 +5,21 @@
             <h1 class="title">Let's be friends !</h1>
             <div class="card-container">
                 <div class="center-card">
-                    <form>
+                    <form action="/user/signup" method="post">
                         <div>
                             <label for="username">Username:</label>
-                            <input placeholder="mango123" id="username" type="text" class="login" />
+                            <input placeholder="mango123" id="username" type="text" class="login" name="username"/>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input placeholder="mango123@email.com" id="email" type="email" class="login" name="email"/>
                         </div>
                         <div>
                             <label for="password">Password:</label>
-                            <input placeholder="#####" id="password" type="password" class="login" />
+                            <input placeholder="#####" id="password" type="password" class="login" name="password"/>
                         </div>
+                        <button type="submit" class="submit-button">Sign-up</button>
                     </form>
-                    <button class="submit-button">Search</button>
                 </div>
             </div>
         </div>

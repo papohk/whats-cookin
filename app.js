@@ -16,6 +16,10 @@ app.set('view engine', 'ejs'); // <-- this is middleware, place this b4 any rout
 
 //serves static files
 app.use(express.static('public'))
+app.use(express.json())
+app.use(express.urlencoded({
+  extended: true
+}))
 
 app.use('/', routes);
 
