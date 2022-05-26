@@ -1,5 +1,7 @@
 const mongoose = require("mongoose")
 const {Schema, model} = mongoose
+const passportLocalMongoose = require('passport-local-mongoose');
+const GoogleStrategy = require('passport-google-oauth20').Strategy;
 
 const schema = new Schema({
     username: {
