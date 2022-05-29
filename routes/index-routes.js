@@ -4,9 +4,9 @@ const siteRoutes=require("./site-routes")
 router.use("/", siteRoutes)
 
 const recipeRoutes=require("./recipe-routes")
-siteRoutes.use("/recipes", recipeRoutes)
+router.use("/recipes", recipeRoutes)
 
 const userRoutes=require("./user-routes")
-siteRoutes.use("/user", userRoutes)
+router.use("/user", userRoutes)
 
 module.exports=router
