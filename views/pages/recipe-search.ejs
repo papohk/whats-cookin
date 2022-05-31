@@ -1,13 +1,18 @@
 <%- include('../partials/head') -%>
-    <%- include('../partials/nav') -%>
+<%- include('../partials/nav') -%>
 
-        <div class="content">
-            <h1 class="title">Hey there, welcome back !</h1>
-            <div class="card-container">
-                <% recipes.forEach(function(recipe){ %>
-                    <%- include('../partials/recipe-card', {recipe: recipe}); %>
-                  <% }); %>  
-
-            </div>
+<div class="content">
+    <h1 class="title">Hey there, let's see what we can make today !</h1>
+    <div class="card-container">
+        <% recipes.forEach(function(recipe){ %>
+            <%- include('../partials/recipe-card', {recipe: recipe}); %>
+            <% }); %>  
+            
         </div>
-        <%- include('../partials/footer') -%>
+    </div>
+    
+    
+    
+    
+    
+    <%- include('../partials/footer') -%>
