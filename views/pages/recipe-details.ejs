@@ -2,43 +2,50 @@
 <%- include('../partials/nav') -%>
 <div class="wrapper">
     <div class="content">
-        <div class="card">
-            <div class="card-top">
-                <!-- <h2 class="title-top"><%= recipe.title %></h2> -->
+        <div class="recipe-card">
+            <div class="recipe-card-top">
+                <div class="icon">
+                    <a href="#"><i class="fa fa-heart-o"></i></a>
+                    </div>
+
                 <img class="card-img" src="<%= recipe.image %>">
             </div>
-            <div class="card-bottom">
-                <p>
-                    <span class="prefix">Title: </span> <span class="title"><%= recipe.title %></span>
-                </p>
-
-                <p>
-                    <span class="prefix">Ready in: </span><%= recipe.readyInMinutes %> mins
-                </p>
-
-                <p>  
-                    <span class="prefix">Number of servings: </span><%= recipe.servings %>
-                </p>
-                <p>
-                    <span class="prefix">Ready in: </span><%= recipe.readyInMinutes %> mins
-                </p>
+            <div class="recipe-card-bottom">
                 <% if (recipe.vegetarian) { %>
                     <p>        
                         <span class="prefix">Vegetarian </span>
                     </p>
-                    <% } %>
-
+                <% } %>
+                <% if (recipe.sustainable) { %>
+                    <p>        
+                        <span class="prefix">Sustainable </span>
+                    </p>
+                <% } %>
                 <p>
-                    <span class="prefix">Summary: </span><%= recipe.summary %>
-                </p>    
+                    <span class="prefix">Title: </span> <span class="title"><%= recipe.title %></span>
+                </p>
+                <p>
+                    <span class="prefix">Ready in: </span><%= recipe.readyInMinutes %> mins
+                </p>
+                <p>  
+                    <span class="prefix">Number of servings: </span><%= recipe.servings %>
+                </p>
                 <p>
                     <span class="prefix">Instructions: </span><%= recipe.instructions %>
                 </p>
+                <p>
+                <% if (recipe.sustainable) { %>
+                    <span class="prefix">Best to Pair with: </span><%= recipe.pairingText %>
+                </p>
+                <% } %>
+
 
                 
-           
+
             </div>
         </div>
     </div>
 </div>
+
+
 <%- include('../partials/footer') -%>
