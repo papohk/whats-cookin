@@ -11,27 +11,32 @@
                 <p>
                     <span class="prefix">Title: </span> <span class="title"><%= recipe.title %></span>
                 </p>
+
                 <p>
                     <span class="prefix">Ready in: </span><%= recipe.readyInMinutes %> mins
                 </p>
+
+                <p>  
+                    <span class="prefix">Number of servings: </span><%= recipe.servings %>
+                </p>
+                <p>
+                    <span class="prefix">Ready in: </span><%= recipe.readyInMinutes %> mins
+                </p>
+                <% if (recipe.vegetarian) { %>
+                    <p>        
+                        <span class="prefix">Vegetarian </span>
+                    </p>
+                    <% } %>
+
                 <p>
                     <span class="prefix">Summary: </span><%= recipe.summary %>
                 </p>    
                 <p>
                     <span class="prefix">Instructions: </span><%= recipe.instructions %>
                 </p>
-                <p>  
-                    <span class="prefix">Number of servings: </span><%= recipe.servings %>
-                </p>
-                <% if (recipe.vegetarian) { %>
-                <p>        
-                    <span class="prefix">Vegetarian </span>
-                </p>
-                <% } %>
+
                 
-                <!-- <p>
-                    This the book Synopsis Part 2
-                </p> -->
+           
             </div>
         </div>
     </div>
