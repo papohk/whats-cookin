@@ -6,7 +6,7 @@ const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const findOrCreate = require('mongoose-findorcreate');
 
 const favSchema = new Schema ({
-    recipeId: String,
+    id: String,
     title: String,
     image: String
 })

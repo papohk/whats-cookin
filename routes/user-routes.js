@@ -4,6 +4,7 @@ const userController=require("../controllers/user-controller")
 
 router.post('/signup', userController.signup)
 router.post('/login', userController.login)
-router.patch('/fav/:userid', userController.fav)
+router.get('/logout', userController.logout)
+router.post('/fav/:id', userController.fav)
 
 module.exports=router;

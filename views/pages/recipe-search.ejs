@@ -1,5 +1,5 @@
 <%- include('../partials/head') -%>
-<%- include('../partials/nav') -%>
+<%- include('../partials/nav', {user:user}) -%>
 
 <div class="content">
     <h1 class="title">Hey there, let's see what we can make today !</h1>
@@ -10,9 +10,7 @@
             
         </div>
     </div>
-    
-    
-    
-    
+     
     
     <%- include('../partials/footer') -%>
+    <script src="/js/fav.js"></script>
