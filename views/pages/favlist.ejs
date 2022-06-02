@@ -1,4 +1,13 @@
 <%- include('../partials/head') -%>
-<%- include('../partials/nav') -%>
-<div>Favorite List</div>
+<%- include('../partials/nav', {user:user}) -%>
+<div class="content">
+    <h1 class="title">Hey there, <%= user.username %>! Here's your favorite recipes !</h1>
+    
+<div class="card-container">
+    <% user.favorites.forEach(function(recipe){ %>
+        <%- include('../partials/recipe-card', {recipe: recipe}); %>
+        <% }); %>  
+        
+    </div>
+</div>
 <%- include('../partials/footer') -%>

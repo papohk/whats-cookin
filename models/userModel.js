@@ -5,10 +5,15 @@ const {Schema, model} = mongoose;
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const findOrCreate = require('mongoose-findorcreate');
 
+const favSchema = new Schema ({
+    id: String,
+    title: String,
+    image: String
+})
 const userSchema = new Schema({
     username: {
         type: String,
-        required: false,
+        required: true,
         minlength: 3
     },
     
@@ -26,7 +31,9 @@ const userSchema = new Schema({
     
     googleId: {
         type: String,
-    }
+    },
+    
+    favorites: [favSchema]
 }
 
 );

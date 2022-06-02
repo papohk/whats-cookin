@@ -17,10 +17,18 @@
             <i class="fa fa-heart"></i>
             Favorites
           </a>
-          <a href="/login">
-            <i class="fa fa-user"></i>
-            Login
-          </a>
+          <% if (user) { %>
+            <a href="/user/logout">
+              <i class="fa fa-user"></i>
+              Logout
+            </a>        
+          <% } else { %>
+            <a href="/login">
+              <i class="fa fa-user"></i>
+              Login
+            </a>
+          <% } %>
+
         </div>
       </div>
     </header>
@@ -29,6 +37,17 @@
         <a href="/">Home</a>
         <!-- <a href="#">IDEAS</a> -->
         <a href="/favlist">FAVORITES</a>
-        <a href="/login">Login</a>
+        <% if (user) { %>
+          <a href="/user/logout">
+            
+            Logout
+          </a>        
+        <% } else { %>
+          <a href="/login">
+            
+            Login
+          </a>
+        <% } %>
+
       </div>
 

@@ -4,46 +4,10 @@
     <a href=<%= `/recipes/${recipe.id}` %>><span class="title"><%= recipe.title %></span></a>
     
     
-    <button class="submit-button"> <i class="fa fa-heart"></i></button>
+    <button class="submit-button fav-button" data-title="<%- recipe.title %>" data-image="<%- recipe.image %>" data-id="<%- recipe.id %>"> <i class="fa fa-heart"></i></button>
   </div>
 
-  <!-- <div class="center-card">
-    <h2 class="center blue-text">
-        RECIPE SEARCH RESULTS
-    </h2>
 
-    <div id="recipes" class="recipes center">
-        <% recipes.forEach(function(recipe){ %>
-            <div class="recipe">
-                <a href="#">
-                    <img src=<%= recipe.image %> class="recipe-cover" />
-                </a>
-                <br>
-                <em><%= recipe.title %></em><br>
-                <%= recipe.readyInMinutes %><br>
-                <%= recipe.weightWatcherSmartPoints %><br>
-                <a href=<%= `/recipes/${recipe.id}` %>>Let's Cook!</a>
-                <br>
-            </div>
-
-            <% }); %>
-
-
-<body>
-  <div class="wrapper">
-    <div class="header">Recipes we found for you</div>
-    
-    <div class="cards_wrap">
-      <div class="card_item">
-        <div class="card_inner">
-          img
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</body>            -->
 
 
  
