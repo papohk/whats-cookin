@@ -177,7 +177,10 @@ h1 {
   text-align: center;
   padding: 0.1rem;
 }
-
+.fa-heart {
+  margin-top: .85rem;
+  color: red;
+}
 .login {
   border: none;
   border-radius: .8rem;

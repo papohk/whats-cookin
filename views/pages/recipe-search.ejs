@@ -5,7 +5,7 @@
     <h1 class="title">Hey there, let's see what we can make today !</h1>
     <div class="card-container">
         <% recipes.forEach(function(recipe){ %>
-            <%- include('../partials/recipe-card', {recipe: recipe}); %>
+            <%- include('../partials/recipe-card', {recipe: recipe, user:user}); %>
             <% }); %>  
             
         </div>
