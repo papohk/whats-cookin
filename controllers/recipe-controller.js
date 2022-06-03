@@ -11,6 +11,12 @@ module.exports = {
             let user = null
             if (sessionInfo) {
                 user = await User.findById(sessionInfo.user)
+                const favoriteIds = []
+                for (let i = 0; i<user.favorites.length; i++) {
+                    let fav = user.favorites[i]
+                    favoriteIds.push(fav.id)
+                }
+                user.favids=favoriteIds
             }
 
             res.render("pages/recipe-search", { recipes: body, user: user })

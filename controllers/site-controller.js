@@ -25,6 +25,12 @@ module.exports = {
             }
             const userId = request.session.passport.user
             const user = await User.findById(userId)
+            const favoriteIds = []
+            for (let i = 0; i<user.favorites.length; i++) {
+                let fav = user.favorites[i]
+                favoriteIds.push(fav.id)
+            }
+            user.favids=favoriteIds
             console.log(user)
             response.render('pages/favlist', { user: user });
         } catch (error) {
