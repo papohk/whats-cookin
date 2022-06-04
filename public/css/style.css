@@ -146,7 +146,7 @@ h1 {
 
 .center-card {
   margin-top: 20vh;
-  background-color: rgb(255, 255, 255, 0.6);
+  background-color: rgb(255, 255, 255, 0.7);
   padding: 1.5rem;
   border-radius: 1rem;
   display: flex;
@@ -181,6 +181,7 @@ h1 {
   margin-top: .85rem;
   color: red;
 }
+
 .login {
   border: none;
   border-radius: .8rem;

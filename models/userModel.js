@@ -58,7 +58,7 @@ passport.deserializeUser(function(id, done) {
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: "https://whatscookin-recipes.herokuapp.com/favlist"
+    callbackURL: "https://whatscookin-recipes.herokuapp.com/auth/google/favlist"
 },
 function(accessToken, refreshToken, email, cb) {
     User.findOrCreate({ googleId: email.id }, function (err, user) {
