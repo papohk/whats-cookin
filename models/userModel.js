@@ -56,7 +56,7 @@ passport.deserializeUser(function(id, done) {
 });
 
 passport.use(new GoogleStrategy({
-    clientID: process.env.CLIENT_ID,
+    clientID: process.env.Client_ID,
     clientSecret: process.env.CLIENT_SECRET,
     callbackURL: "https://whatscookin-recipes.herokuapp.com/auth/google/favlist"
 },
