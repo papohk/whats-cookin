@@ -10,7 +10,7 @@ const routes = require('./routes/index-routes');
 const app = express();
 const {
   PORT = 8000,
-  MONGODB_URI = 'mongodb://localhost:27017/cookin'
+  MONGO_URI
 } = process.env
 console.log('SECRET_KEY', process.env.SECRET_KEY)
 app.set('view engine', 'ejs'); // <-- this is middleware, place this b4 any routes
@@ -32,7 +32,7 @@ app.use(passport.session());
 
 app.use('/', routes);
 
-mongoose.connect(MONGODB_URI, () => {
+mongoose.connect(MONGO_URI, () => {
   app.listen(PORT, () => {
     console.log(`Example app listening on port ${PORT}`)
   })
