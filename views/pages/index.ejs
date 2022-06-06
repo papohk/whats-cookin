@@ -4,16 +4,17 @@
 <div class="content">
     <h1 class="title">What's Cookin'?</h1>
     <div class="card-container">
-      <div class="center-card">
-        <form action="/recipes" method="get">
-        <label for="query">Ingredients:</label>
+      <!-- <div class="center-card"> -->
+        <form action="/recipes" method="get" class="search-bar">
+        <!-- <label for="query">Ingredients:</label> -->
         <input name="ingredients" placeholder="avocado, cheese..." id="query" type="text" class="ingredients" />
-        <input type="submit" class="submit-button" value="Search">
+        <!-- <input type="submit" class="submit-button" value="Search"> -->
+        <button type="submit"><img src="/images/search_icon.png"></button>
       </form>
         
         
         
-      </div>
+      <!-- </div> -->
     </div>
   </div>
   <%- include('../partials/footer') -%>
