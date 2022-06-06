@@ -207,9 +207,9 @@ h1 {
   /* border-bottom: 2px solid red; */
 }
 
-.ingredients[type=text]:focus {
-  /* background-color: var(--lightorange); */
-}
+/* .ingredients[type=text]:focus {
+  background-color: var(--lightorange);
+} */
 .submit-button {
   margin-top: .85rem;
   border-radius: 0.5rem;
