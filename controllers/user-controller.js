@@ -51,18 +51,21 @@ module.exports = {
 
     // working on sending patch request onclick of heart 5.31.22 (to do next) currently getting bad request
     fav: async (req, res) => {
-        console.log('fav route', req.session)
+        console.log('fav route', req.get('host'),req.originalUrl);
         const userid = req.session.passport.user
-        console.log(req.body)
+        console.log('userid', userid);
         try {
             const user = await User.findByIdAndUpdate(userid, {
                 $push: {
                     favorites: req.body
                 }
             })
+            
             res.status(201).json({ message: 'Your recipe added to favorites!!' })
+            // res.redirect('back')
 
-        } catch (error) {
+        } catch (error) 
+        {   console.log('HEART ERROR', error);
             res.status(500).json(error)
 
         }
