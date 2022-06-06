@@ -17,7 +17,12 @@ h1 {
   padding: 1rem;
   color: white;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Poppins', sans-serif;
+}
 .container {
   display: flex;
   background-image: url("https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
@@ -26,9 +31,50 @@ h1 {
   background-position: center;
   min-height:100vh;
   position: relative;
+
+  /* added the follwoing 6.6.22 */
+  width:100%;
+  align-items:center;
+  justify-content: center;
+}
+.search-bar{
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+  margin-top: 30vh;
+}
+.search-bar input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: var(--blue);
+  flex-direction: column;
+  
 }
 
+::placeholder {
+  color: var(--blue);
+}
 
+.search-bar button img{
+  width: 25px;
+}
+.search-bar button{
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: orangered;
+  cursor: pointer;
+  
+}
 /* 
 .header-top {
   background-color:#C2C2C2 ;
@@ -146,7 +192,7 @@ h1 {
 
 .center-card {
   margin-top: 20vh;
-  background-color: rgb(255, 255, 255, 0.6);
+  background-color: rgb(255, 255, 255, 0.7);
   padding: 1.5rem;
   border-radius: 1rem;
   display: flex;
@@ -155,15 +201,15 @@ h1 {
 
 .ingredients[type=text] {
   border: none;
-  border-radius: .8rem;
+  border-radius: 8rem;
   padding: 12px 20px;
   margin: 8px 0;
   /* border-bottom: 2px solid red; */
 }
 
-.ingredients[type=text]:focus {
+/* .ingredients[type=text]:focus {
   background-color: var(--lightorange);
-}
+} */
 .submit-button {
   margin-top: .85rem;
   border-radius: 0.5rem;
@@ -181,6 +227,7 @@ h1 {
   margin-top: .85rem;
   color: red;
 }
+
 .login {
   border: none;
   border-radius: .8rem;
@@ -202,7 +249,7 @@ h1 {
   justify-content: center;
   color: var(--white);
   position: absolute;
-  height: 35px;
+  height: 45px;
   margin-top: -100px;
   clear:both;
   bottom: 0;

@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/papohk/codesquad-personal-project.git"
   },
+  "engines": {
+    "node": "16.14.2"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
