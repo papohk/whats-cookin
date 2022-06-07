@@ -1,32 +1,58 @@
 <%- include('../partials/head') -%>
-<%- include('../partials/nav', {user:user}) -%>
+    <%- include('../partials/nav', {user:user}) -%>
 
         <div class="content">
-            <h1 class="title">Hey there, welcome back !</h1>
-            <div class="card-container">
-                <div class="center-card">
-                    <form action="/user/login" method="post">
-                        <div>
-                            <!-- <label for="email">Email:</label> -->
-                            <input placeholder="email" id="email" type="text" class="login" name="email" />
-                        </div>
-                        <div>
-                            <!-- <label for="username">Username:</label> -->
-                            <input placeholder="username" id="username" type="text" class="login" name="username" />
-                        </div>
-                        <div>
-                            <!-- <label for="password">Password:</label> -->
-                            <input placeholder="password" id="password" type="password" class="login" name="password"/>
-                        </div>
-                        <button class="submit-button" type="submit">Login</button>
-                    </form>
-                    <button class="submit-button">
-                        <a href="/auth/google" role="button">Login or Register with Google</a>
-                    </button>
-                    <!-- <a class="submit-button" href="signup">Sign Up</a> -->
-                    <p>Don't Have An Account? <a href="signup">Create One Here.</a></p>
-                </div>
+            <!-- <h1 class="title">Hey there, welcome back !</h1> -->
+            <!-- <div class="container"> -->
 
+            <div class="center-card-container">
+                <header>Welcome back !</header>
+                <form action="/user/login" method="post">
+                    <!-- <div class="box bar">
+                        <span class="fa fa-at"></span>
+                        <input type="text" required placeholder="email" id="email" class="login" name="email" />
+                    </div> -->
+                    <div class="box bar">
+                        <span class="fa fa-user"></span>
+                        <!-- <label for="username">Username:</label> -->
+                        <input required placeholder="username" id="username" type="text" 
+                            name="username" />
+                    </div>
+                    <div class="box bar">
+                        <span class="fa fa-lock"></span>
+                        <!-- <label for="password">Password:</label> -->
+                        <input required placeholder="password" id="password" type="password" class="passs-key"
+                            name="password" />
+                        <span class="show">SHOW</span>
+                    </div>
+                    <div class="pass">
+                        <a href="#">Forgot Password</a>
+                    </div>
+                    <div class="box">
+                        <input type="submit" value="LOGIN">
+                    </div>
+                    <!-- <button class="submit-button" type="submit">Login</button> -->
+                </form>
+                <div class="login">Or login with</div>
+                <div class="links">
+                    <div class="facebook">
+                        <a href="/auth/google" method="get"><i class="fab fa-google"><span>Google</span></i></a>
+                    </div>
+                    <div class="instagram">
+                        <i class="fab fa-instagram"><span>Instagram</span></i>
+                    </div>
+                </div>
+                <div class="signup">Don't hava account?
+                    <a class="signup-link" href="signup">Create One Here.</a>
+                </div>
+                <!-- <button class="submit-button">
+                        <a href="/auth/google" role="button">Login or Register with Google</a>
+                    </button> -->
+                <!-- <a class="submit-button" href="signup">Sign Up</a> -->
+                <!-- <p class="create-account-msg">Don't Have An Account? <a class="signup-link" href="signup">Create One Here.</a></p> -->
             </div>
+
+            <!-- </div> -->
         </div>
+        <script src="/app.js"></script>
         <%- include('../partials/footer') -%>

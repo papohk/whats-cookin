@@ -1,13 +1,17 @@
 <%- include('../partials/head') -%>
-<%- include('../partials/nav', {user:user}) -%>
-<div class="content">
-    <h1 class="title">Hey there, <%= user.username %>! Here's your favorite recipes !</h1>
-    
-<div class="card-container">
-    <% user.favorites.forEach(function(recipe){ %>
-        <%- include('../partials/recipe-card', {recipe: recipe}); %>
-        <% }); %>  
-        
-    </div>
-</div>
-<%- include('../partials/footer') -%>
+    <%- include('../partials/nav', {user:user}) -%>
+        <div class="content">
+            <% if(user.favorites.length>0){ %>
+                <h1 class="title">Hey there, <%= user.username %>! Here's your favorite recipes !</h1>
+                <% } else { %>
+                    <h1 class="title">You don't have any favorites yet :)</h1>
+                    <% } %>
+                        <div class="card-container">
+
+                            <% user.favorites.forEach(function(recipe){ %>
+                                <%- include('../partials/recipe-card', {recipe: recipe}); %>
+                                    <% }); %>
+
+                        </div>
+        </div>
+        <%- include('../partials/footer') -%>

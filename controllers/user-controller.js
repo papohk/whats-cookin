@@ -19,7 +19,7 @@ module.exports = {
     },
 
     login: (request, response) => {
-        const { email, username, password } = request.body;
+        const { username, password } = request.body;
         console.log(`PASSWORD ENTERED: ', ${password}`)
         const user = new User({
             username: username,

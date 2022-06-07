@@ -13,7 +13,7 @@
     
   %>
   <img src="<%- recipe.image %>">
-    <a href=<%= `/recipes/${recipe.id}` %>><span class="title"><%= recipe.title %></span></a>
+    <a href=<%= `/recipes/${recipe.id}` %>><span class="mini-card-title"><%= recipe.title %></span></a>
     
     <% if (user) { %>
       <i data-title="<%- recipe.title %>" data-image="<%- recipe.image %>" data-id="<%- recipe.id %>" class="fav-button <%= heartclass %> fa-heart" ></i>
