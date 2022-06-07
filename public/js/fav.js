@@ -14,6 +14,8 @@ for(btn of favButtons) {
             })
             const data = res.json()
             console.log('FAV BUTTON DATE: ', data)
+            // fetch (`/recipes${location.search}`)
+            location.reload();
         } catch (error) {
             console.log(error)
 
